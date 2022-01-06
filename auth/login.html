@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="csrf-token" content="KDHmeWXwos4K7i5SxOmYSTEBIinP4zQne2lUHfiD">
+      <title>UNIMART</title>
+      <!-- Scripts -->
+      <script src="js/app.js" defer></script>
+      <!-- Fonts -->
+      <link rel="dns-prefetch" href="//fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+      <!-- Styles -->
+      <link href="css/app.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   </head>
+   <body>
+      <div id="app">
+         <main class="py-4" style="margin-top: 65px">
+            <div class="container">
+               <header>Login Form</header>
+               <form method="POST" action="/unimart/login">
+                  <input type="hidden" name="_token" value="KDHmeWXwos4K7i5SxOmYSTEBIinP4zQne2lUHfiD">        
+                  <div class="form-group text-left">
+                     <label for="username" class="mb-0">Email</label>
+                     <input type="email" name="email" class="form-control " id="email" value="" required autocomplete="email" placeholder="email" value="">
+                  </div>
+                  <div class="form-group text-left position-relative">
+                     <label for="password" class="mb-0">Password</label>
+                     <input type="password" name="password" required class="pswrd form-control " id="password" autocomplete="current-password"  placeholder="password">
+                     <span class="show">SHOW</span>
+                  </div>
+                  <div class="clearfix">
+                     <div class="form-check d-inline-block pl-0 float-left">
+                        <input type="checkbox"  name="remember" id="remember"  >
+                        <label for="remember">Remember me</label>
+                     </div>
+                     <a class="btn-link float-right" href="/unimart/password/reset">
+                     Forgot password?
+                     </a>
+                  </div>
+                  <div class="button">
+                     <div class="inner"></div>
+                     <button>LOGIN</button>
+                  </div>
+               </form>
+            </div>
+         </main>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <script>
+         var input = document.querySelector('.pswrd');
+         var show = document.querySelector('.show');
+         show.addEventListener('click',function(){
+             if(input.type === "password"){
+                 input.type = "text";
+                 show.style.color = "#1DA1F2";
+                 show.textContent = "HIDE";
+             }else{
+                 input.type = "password";
+                 show.textContent = "SHOW";
+                 show.style.color = "#111";
+             }
+         });
+      </script>
+   </body>
+</html>
