@@ -18,6 +18,10 @@
     display: block;
     color: #000;
     padding: 10px 15px;
+    font-weight: 900;
+}
+#head-top #main-menu li a:hover{
+    color: rgb(206, 22, 22);
 }
 #head-top #main-menu li:last-child a{ padding-right: 0!important;}
 #head-body{ background: #f12a43;}
