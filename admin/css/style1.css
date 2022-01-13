@@ -229,6 +229,7 @@ footer .copy{
 
 .content-box-large {
   padding: 20px;
+ 
 }
 
 .box-with-header {
@@ -583,6 +584,7 @@ body {
 
 .panel-body {
   clear:both;
+  min-height: 250px;
 }
 
 /* Responsive CSS */
