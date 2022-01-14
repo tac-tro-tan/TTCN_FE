@@ -1,0 +1,220 @@
+<!-- header -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" 
+    crossorigin="anonymous">
+    <title>IT Shop - Admin</title>
+    <link rel="shortcut icon" type="image/ico" href="images/icon-180x180.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- styles -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="css/style1.css" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<div class="header">
+	     <div class="container">
+	        <div class="row">
+	           <div class="col-md-5">
+	              <!-- Logo -->
+	              <div class="logo">
+	                 <h1><a href="index.html">IT Shop - Admin</a></h1>
+	              </div>
+	           </div>
+	           <div class="col-md-5">
+	              <div class="row">
+	                <div class="col-lg-12"></div>
+	              </div>
+	           </div>
+	           <div class="col-md-2">
+	              <div class="navbar navbar-inverse" role="banner">
+	                  <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+	                    <ul class="nav navbar-nav">
+	                      <li class="dropdown">
+	                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account <b class="caret"></b></a>
+	                        <ul class="dropdown-menu animated fadeInUp">
+	                          <li><a href="profile.html">Profile</a></li>
+	                          <li><a href="login.html">Logout</a></li>
+	                        </ul>
+	                      </li>
+	                    </ul>
+	                  </nav>
+	              </div>
+	           </div>
+	        </div>
+	     </div>
+	</div>
+<!-- /.header -->
+
+    <div class="page-content">
+    	<div class="row">
+		  <div class="col-md-2">
+		  	<div class="sidebar content-box" style="display: block;">
+                <!-- Nav-bar -->
+				<ul class="nav">
+				    <!-- Main menu -->
+				    <li><a href="index.html"><i class="glyphicon glyphicon-home"></i> Trang chủ</a></li>
+				    <li ><a href="user.html"><i class="glyphicon glyphicon-user"></i> Quản lý người dùng</a></li>
+					<li><a href="employee.html"><i class="glyphicon glyphicon-briefcase"></i> Quản lý nhân viên</a></li>
+				    <li><a href="product.html"><i class="glyphicon glyphicon-phone"></i> Quản lý sản phẩm</a></li>
+					<li><a href="order.html"><i class="glyphicon glyphicon-shopping-cart"></i> Quản lý đơn hàng</a></li>
+                    <li class="current"><a href="thongke.html"><i class="glyphicon glyphicon-shopping-cart"></i> Thống kê doanh thu bán hàng</a></li>
+				    <li class="submenu">
+				         <a href="#">
+				            <i class="glyphicon glyphicon-list"></i> Pages
+				            <span class="caret pull-right"></span>
+				         </a>
+				         <!-- Sub menu -->
+				         <ul>
+				            <li><a href="login.html">Login</a></li>
+				            <li><a href="javascript:void(0)">Signup</a></li>
+				        </ul>
+				    </li>
+				</ul>
+				<!-- /.nav-bar -->
+             </div>
+		  </div>
+		  <div class="col-md-10">
+            <div class="content-box-large">	
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Thống kê doanh thu bán hàng của nhân viên</h1>
+                    <div class="btn-toolbar ">
+                        <div class="btn-group d-flex align-self-center">
+                            <button type="button" class="btn btn-secondary">Export</button>
+                        </div>
+                        
+                        <div class="p-lg-4 d-flex">
+                            <div class="d-flex align-self-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                            </div>
+                            <select class="form-select btn-outline-secondary" onchange="location = this.value;">
+                                <option selected value="index.html">Theo tháng</option>
+                                <option value="index.html">Theo tuần</option>
+                            </select>
+                        </div>
+                    </div>
+                                
+                </div>
+                <div class="x_panel tile fixed_height_320">
+                    <div>
+                        <h3>Tổng doanh thu: 100.000.000đ</h3>
+                    </div>
+                    <div class="x_content">
+                        <table cellpadding="0" cellspacing="0" border="2" class="table table-striped table-bordered" id="example">
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Tên</th>
+                                    <th scope="col">Số đơn hàng</th>
+                                    <th scope="col">doanh thu bán hàng</th>
+                                  
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="odd gradeX">
+                                    <td>1</td>
+                                    <td>Bùi Thành Lâm</td>
+                                    <td>14</td>
+                                    <td class="center"> 30000000</td>  
+                                </tr>
+                                <tr class="even gradeC">
+                                    <td>2</td>
+                                    <td>Bùi Thành Lâm</td>
+                                    <td>14</td>
+                                    <td class="center"> 30000000</td>  
+                                </tr>
+                                <tr class="odd gradeA">
+                                    <td>3</td>
+                                    <td>Bùi Thành Lâm</td>
+                                    <td>14</td>
+                                    <td class="center"> 30000000</td>  
+                                </tr>
+                                <tr class="even gradeA">
+                                    <td>4</td>
+                                    <td>Bùi Thành Lâm</td>
+                                    <td>14</td>
+                                    <td class="center"> 30000000</td>  
+                                </tr>
+                                <tr class="odd gradeA">
+                                    <td>5</td>
+                                    <td>Bùi Thành Lâm</td>
+                                    <td>14</td>
+                                    <td class="center"> 30000000</td>  
+                                </tr>
+                                <tr class="even gradeA">
+                                    <td>6</td>
+                                    <td>Bùi Thành Lâm</td>
+                                    <td>14</td>
+                                    <td class="center"> 30000000</td>  
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="content-box-header">
+                <div class="panel-title">Biểu đồ thống kê doanh thu</div>
+            </div>
+            <!-- <div class="content-box-large box-with-header">
+                
+                Pellentesque luctus quam quis consequat vulputate. Sed sit amet diam ipsum. Praesent in pellentesque diam, sit amet dignissim erat. Aliquam erat volutpat. Aenean laoreet metus leo, laoreet feugiat enim suscipit quis. Praesent mauris mauris, ornare vitae tincidunt sed, hendrerit eget augue. Nam nec vestibulum nisi, eu dignissim nulla.
+                <br /><br />
+            </div> -->
+            <script type="text/javascript">
+                google.charts.load('current', {'packages':['corechart']});
+                google.charts.setOnLoadCallback(drawChart);
+                function drawChart() {
+                  var data = google.visualization.arrayToDataTable([
+                  ['Task', 'Hours per Day'],
+                  ['Bùi Thành Lâm', 30000000],
+                  ['Bùi Thành Hoàng', 12000000],
+                  ['Bùi Thành Thắng', 15040000],
+                  ['Bùi Thành Minh', 9000000],
+                  ['Bùi Thành Hùng', 6000000],
+                  ['Bùi Văn Thư', 20000000]
+                ]);
+                
+                  var options = {'title':'Thống kê doanh thu'};
+                
+                  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                  chart.draw(data, options);
+                }
+            </script>
+            <div id="piechart" style="width: 100%; height: 500px;"></div>
+          </div>
+          
+		</div>
+    </div>
+
+ 	<!-- Footer -->
+      <footer>
+         <div class="container">
+         
+            <div class="copy text-center">
+               Copyright 2017 &copy; <a href='#'>Vinaenter Edu</a>
+            </div>
+            
+         </div>
+      </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
+    <!-- /.footer -->
